@@ -567,13 +567,7 @@ input.toggle:checked + label {
 	color:#FFFFFF;
 }
 
-.contentbox{
-	height: 100vh;
-}
 
-.contentboxfooter{
-	height: calc(100vh - 350px);
-}
 
 @media(max-width:767px) {
 	
