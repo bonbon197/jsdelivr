@@ -107,6 +107,9 @@ header .intro-text .skills {
     font-size: 1.25em;
     font-weight: 300;
 }
+#page-top .window.cta.navbar-left {
+}
+
 
 @media(min-width:768px) {
     header .container {
@@ -394,14 +397,14 @@ footer .footer-below {
 }
 
 .portfolio-modal .modal-content {
-    padding: 100px 0;
-    min-height: 100%;
-    border: 0;
-    border-radius: 0;
-    text-align: center;
-    background-clip: border-box;
-    -webkit-box-shadow: none;
-    box-shadow: none;
+	padding: 100px 0;
+	min-height: 100%;
+	border: 0;
+	border-radius: 0;
+	text-align: center;
+	background-clip: border-box;
+	-webkit-box-shadow: none;
+	box-shadow: none;
 }
 
 .portfolio-modal .modal-content h2 {
@@ -457,34 +460,110 @@ footer .footer-below {
     opacity: 0;
 }
 
+.cta {
+	background-color: #D31245;
+	color: #FFFFFF;
+	z-index: 6;
+	position: fixed
+}
+
+iframe {
+width:700px;
+height:600px;
+border:none;
+}
+
+#formmodal2 {
+	background-color:transparent;
+}
+
+input.toggle { display: none; }
+
+div.window {
+	color: white;
+	width: 50;
+	background: #d31245;
+	text-align: left;
+}
+
+div.window div {
+	width: 0px;
+	margin: .2rem;
+	overflow: hidden;
+}
+
+input.toggle ~ div {
+	width: 0px;
+	margin: .2rem;
+	overflow: hidden;
+	transition: .6s all cubic-bezier(0.730, -0.485, 0.145, 1.620);
+}
+
+input.toggle:checked ~ div {
+	width: 180px;
+	height: 180px;
+}
+
+div.window label {
+	display: block;
+	background: #d31245;
+	padding: .6rem;
+}
+
+div.window label:hover,
+	div.window label:focus {
+		cursor: pointer;
+		background: #d31245;
+}
+
+input.toggle:checked + label {
+	background: #d31245;
+}
+
 .bg-home{
-	background-image: url(../img/test4.jpg);
+	background-image: url(http://images.go.emersonnetworkpower.com/EloquaImages/clients/LiebertCorporation/{bc252bdd-3adb-4af2-a842-5cf043e2c26f}_home_image.jpg);
 background-repeat:no-repeat;
-background-size:cover;
-background-position:center;
+background-size:contain;
+background-position:right;
 background-color:#FAA634;
 }
 
 .bg-training{
-	background-image: url(../img/test2.jpg);
+	background-image: url(http://images.go.emersonnetworkpower.com/EloquaImages/clients/LiebertCorporation/{c0741dd3-4380-4e44-847f-0155fd432e3a}_training_image.jpg);
 background-repeat:no-repeat;
-background-size:cover;
-background-position:center;
+background-size:contain;
+background-position:right;
+background-color:#A0CF67;
+}
+
+.bg-resource {
+background-image:url(http://images.go.emersonnetworkpower.com/EloquaImages/clients/LiebertCorporation/{c893f801-0747-4c00-989d-d6c480d56a5e}_resource_image.jpg);
+background-repeat:no-repeat;
+background-size:contain;
+background-position:right;
 }
 
 .bg-rewards{
-	background-image:url(../img/bg-rewards.png);
+	background-image:url(http://images.go.emersonnetworkpower.com/EloquaImages/clients/LiebertCorporation/{c0e13604-30b8-4eb0-9785-2ebd9e23cf98}_rewards_image.jpg);
 background-repeat:no-repeat;
 background-size:contain;
 background-position:right;
 background-color:#FFFFFF;
 }
 
-.img-bg4{
-	background-image: url(../img/test5.jpg);
+.bg-tools{
+	background-image:url(http://images.go.emersonnetworkpower.com/EloquaImages/clients/LiebertCorporation/{e7dfb3d3-4e26-4e83-b1f6-cc35cf6a832c}_tools_image.jpg);
 background-repeat:no-repeat;
-background-size:cover;
-background-position:center;
+background-size:contain;
+background-position:right;
+}
+
+.bg-subscription{
+	background-image: url(http://images.go.emersonnetworkpower.com/EloquaImages/clients/LiebertCorporation/{a3807b33-fd0e-4672-a1bf-558b43b4c210}_subscription_image.jpg);
+background-repeat:no-repeat;
+background-size:contain;
+background-position:right;
+background-color:#00AFE9;
 color:#FFFFFF;
 }
 
@@ -496,35 +575,67 @@ color:#FFFFFF;
 	height: calc(100vh - 350px);
 }
 
+
+
 @media(max-width:767px) {
 	.bg-home {
 		background-image:none;
 		background-color:#FAA634;
+		height: 100vh;
+		overflow:auto;
+		clear:both;
 	}
 	
 	.bg-training {
 		background-image:none;
 		background-color:#A0CF67;
+		height: 100vh;
+		overflow:auto;
+		clear:both;
 	}
 	
-	.img-bg3 {
+	.bg-subscription {
 		background-image:none;
 		background-color:#00AFE9;
+		height: 100vh;
+		overflow:auto;
+		clear:both;
+	}
+	
+	.bg-resource {
+		background-image:none;
+		overflow:auto;
+		clear:both;
 	}
 	
 	.img-bg4 {
 		background-image:none;
 		background-color:#00AFE9;
+		height: 100vh;
+		overflow:auto;
+		clear:both;
 	}
 	
 	.bg-rewards {
 		background-image:none;
 		background-color:#FFFFFF;
+		height: 100vh;
+		overflow:auto;
+		clear:both;
+	}
+	
+	.bg-tools {
+		background-image:none;
+		overflow:auto;
+		clear:both;
+	}
+	
+	.cta {
+	display: none;
+	top: 68%;
 	}
 }
 
 .clear {
 	clear:both;
 }
-
-
