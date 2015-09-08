@@ -578,6 +578,7 @@ color:#FFFFFF;
 
 
 @media(max-width:767px) {
+	
 	.bg-home {
 		background-image:none;
 		background-color:#FAA634;
@@ -631,7 +632,7 @@ color:#FFFFFF;
 	}
 	
 	.cta {
-	display: none;
+	display:none;
 	top: 68%;
 	}
 }
