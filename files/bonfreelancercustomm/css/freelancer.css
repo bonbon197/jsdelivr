@@ -521,50 +521,58 @@ input.toggle:checked + label {
 }
 
 .bg-home{
-	background-image: url(https://images.go.emersonnetworkpower.com/EloquaImages/clients/LiebertCorporation/{bc252bdd-3adb-4af2-a842-5cf043e2c26f}_home_image.jpg);
-	background-repeat:no-repeat;
-	background-size:contain;
-	background-position:right;
-	background-color:#FAA634;
+	background-image: url(http://images.go.emersonnetworkpower.com/EloquaImages/clients/LiebertCorporation/{bc252bdd-3adb-4af2-a842-5cf043e2c26f}_home_image.jpg);
+background-repeat:no-repeat;
+background-size:contain;
+background-position:right;
+background-color:#FAA634;
 }
 
 .bg-training{
 	background-image: url(http://images.go.emersonnetworkpower.com/EloquaImages/clients/LiebertCorporation/{c0741dd3-4380-4e44-847f-0155fd432e3a}_training_image.jpg);
-	background-repeat:no-repeat;
-	background-size:contain;
-	background-position:right;
-	background-color:#A0CF67;
+background-repeat:no-repeat;
+background-size:contain;
+background-position:right;
+background-color:#A0CF67;
 }
 
 .bg-resource {
-	background-image:url(http://images.go.emersonnetworkpower.com/EloquaImages/clients/LiebertCorporation/{c893f801-0747-4c00-989d-d6c480d56a5e}_resource_image.jpg);
-	background-repeat:no-repeat;
-	background-size:contain;
-	background-position:right;
+background-image:url(http://images.go.emersonnetworkpower.com/EloquaImages/clients/LiebertCorporation/{c893f801-0747-4c00-989d-d6c480d56a5e}_resource_image.jpg);
+background-repeat:no-repeat;
+background-size:contain;
+background-position:right;
 }
 
 .bg-rewards{
 	background-image:url(http://images.go.emersonnetworkpower.com/EloquaImages/clients/LiebertCorporation/{c0e13604-30b8-4eb0-9785-2ebd9e23cf98}_rewards_image.jpg);
-	background-repeat:no-repeat;
-	background-size:contain;
-	background-position:right;
-	background-color:#FFFFFF;
+background-repeat:no-repeat;
+background-size:contain;
+background-position:right;
+background-color:#FFFFFF;
 }
 
 .bg-tools{
 	background-image:url(http://images.go.emersonnetworkpower.com/EloquaImages/clients/LiebertCorporation/{e7dfb3d3-4e26-4e83-b1f6-cc35cf6a832c}_tools_image.jpg);
-	background-repeat:no-repeat;
-	background-size:contain;
-	background-position:right;
+background-repeat:no-repeat;
+background-size:contain;
+background-position:right;
 }
 
 .bg-subscription{
 	background-image: url(http://images.go.emersonnetworkpower.com/EloquaImages/clients/LiebertCorporation/{a3807b33-fd0e-4672-a1bf-558b43b4c210}_subscription_image.jpg);
-	background-repeat:no-repeat;
-	background-size:contain;
-	background-position:right;
-	background-color:#00AFE9;
-	color:#FFFFFF;
+background-repeat:no-repeat;
+background-size:contain;
+background-position:right;
+background-color:#00AFE9;
+color:#FFFFFF;
+}
+
+.contentbox{
+	height: 100vh;
+}
+
+.contentboxfooter{
+	height: calc(100vh - 350px);
 }
 
 
@@ -625,8 +633,10 @@ input.toggle:checked + label {
 	
 	.cta {
 	display:none;
+	height: 200px;
 	top: 68%;
 	}
+	
 }
 
 .clear {
