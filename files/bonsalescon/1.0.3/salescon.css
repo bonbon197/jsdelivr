@@ -1,0 +1,604 @@
+/*!
+ * Start Bootstrap - Stylish Portfolio Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Global Styles */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.text-vertical-center {
+	display: table-cell;
+	text-align: left;
+	vertical-align: middle;
+	padding-right: 2em;
+	padding-left: 2em;
+}
+
+.text-vertical-center h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 4em;
+	font-weight: 700;
+}
+
+/* Custom Button Styles */
+
+.btn-dark {
+	border-radius: 0;
+	color: #fff;
+	background-color: rgba(72,2,65,0.40);
+	border-color: #c40c5c;
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.btn-light {
+    border-radius: 0;
+    color: #333;
+    background-color: rgb(255,255,255);
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+    color: #333;
+    background-color: rgba(255,255,255,0.8);
+}
+
+/* Custom Horizontal Rule */
+
+hr.small {
+	width: 100%;
+
+}
+
+/* Side Menu */
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    margin-right: -250px;
+    overflow-y: auto;
+    background: #222;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 55px;
+    font-size: 18px;
+    line-height: 55px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+#menu-toggle {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#sidebar-wrapper.active {
+    right: 250px;
+    width: 250px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.toggle {
+    margin: 5px 5px 0 0;
+}
+
+/* Start Glow */
+
+.glow {
+color: #fff;
+-webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+-moz-animation: neon1 1.5s ease-in-out infinite alternate;
+animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+.glow a:hover{
+color: #FF1177;
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;
+}
+
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 6px #fff, 0 0 16px #fff, 0 0 24px #fff, 0 0 27px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+  }
+  to {
+    text-shadow: 0 0 3px #fff, 0 0 5px #fff, 0 0 7px #fff, 0 0 10px #FF1177, 0 0 17px #FF1177, 0 0 20px #FF1177, 0 0 25px #FF1177, 0 0 37px #FF1177;
+  }
+}
+
+@-moz-keyframes neon1 {
+  from {
+    text-shadow: 0 0 6px #fff, 0 0 16px #fff, 0 0 24px #fff, 0 0 27px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+  }
+  to {
+    text-shadow: 0 0 3px #fff, 0 0 5px #fff, 0 0 7px #fff, 0 0 10px #FF1177, 0 0 17px #FF1177, 0 0 20px #FF1177, 0 0 25px #FF1177, 0 0 37px #FF1177;
+  }
+}
+
+@keyframes neon1 {
+  from {
+    text-shadow: 0 0 6px #fff, 0 0 16px #fff, 0 0 24px #fff, 0 0 27px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+  }
+  to {
+    text-shadow: 0 0 3px #fff, 0 0 5px #fff, 0 0 7px #fff, 0 0 10px #FF1177, 0 0 17px #FF1177, 0 0 20px #FF1177, 0 0 25px #FF1177, 0 0 37px #FF1177;
+  }
+}
+
+/* End Glow */
+
+/* BG Animation */
+
+
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+
+@keyframes imageAnimation { 
+    0% { opacity: 0; animation-timing-function: ease-in; }
+    8% { opacity: 1; animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+/* End BG Animation */
+
+/* Header */
+
+.header {
+    display: table;
+    position: relative;
+	color:#fff;
+    width: 100%;
+    height: 100%;
+    background: url(http://images.go.emersonnetworkpower.com/EloquaImages/clients/LiebertCorporation/%7b2118bc16-7073-4d7a-9792-7b8a161dcf1b%7d_basex.jpg) no-repeat scroll;
+	background-attachment:fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+	}
+	
+	h1 .shaping{
+		font-family: Montserrat Regular;
+	}
+	
+	h1 .future{
+		font-family: Montserrat Black;
+	}
+	
+	#animate-area	{ 
+	background-image: url(http://images.go.emersonnetworkpower.com/EloquaImages/clients/LiebertCorporation/%7b2118bc16-7073-4d7a-9792-7b8a161dcf1b%7d_basex.jpg);
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+	animation: animatedBackground 150s linear infinite;
+}
+
+/* About */
+
+.about {
+    padding: 50px 0;
+	color:#fff;
+	width: 100%;
+	min-height: 50%;
+	background-color:#000;
+	background-attachment:fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* Message */
+.message{
+	padding: 50px 0;
+	width: 100%;
+	min-height: 100%;
+}
+
+#location.message{
+	padding: 50px 0;
+	width: 100%;
+	min-height: 30%;
+}
+
+
+/* Services */
+
+.services {
+    padding: 50px 0;
+	width: 100%;
+	min-height: 100%;
+	background:url(http://images.go.emersonnetworkpower.com/EloquaImages/clients/LiebertCorporation/%7b8fd2c84d-e51d-4b7e-b68a-693c08e5c40c%7d_basex3.jpg) no-repeat scroll;
+	background-attachment:fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.service-item {
+    margin-bottom: 30px;
+	width: 100%;
+	height: 100%;
+}
+
+/* Callout */
+
+.callout {
+	/* [disabled]display:table; */
+	padding: 50px 0;
+	min-width: 100%;
+	min-height: 60%;
+	color: #fff;
+	background: url(http://images.go.emersonnetworkpower.com/EloquaImages/clients/LiebertCorporation/%7b2118bc16-7073-4d7a-9792-7b8a161dcf1b%7d_basex.jpg) no-repeat scroll;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+@media(max-width:480px){
+#registration.callout h1{
+	font-size:40px;
+}
+}
+
+/* Portfolio */
+
+.portfolio {
+    padding: 50px 0;
+	width:100%;
+	min-height:100%;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.img-portfolio {
+    margin: 0 auto;
+}
+
+.img-portfolio:hover {
+    opacity: 0.8;
+}
+
+/* Call to Action */
+
+.call-to-action {
+    padding: 50px 0;
+	width: 100%;
+	min-height: 100%;
+	background:url(../img/bg2.jpg) no-repeat center center scroll;
+	background-attachment:fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.call-to-action .btn {
+    margin: 10px;
+}
+
+/* Map */
+
+.map {
+    min-height:55%;
+}
+
+@media(max-width:768px) {
+    .map {
+        height: 40%;
+    }
+}
+
+/* Footer */
+
+footer {
+    padding: 100px 0;
+}
+
+/* Resources */
+.resources {
+    padding: 50px 0;
+	color:#fff;
+	width: 100%;
+	min-height: 100%;
+	background:url(http://images.go.emersonnetworkpower.com/EloquaImages/clients/LiebertCorporation/%7bca95d91d-a490-4c4a-b003-81e13c512ba3%7d_basex4.jpg) no-repeat scroll;
+	background-attachment:fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+
+/* Cheats */
+
+.cheat {
+	position: fixed;
+	top:85%;
+	right:2%;
+	z-index:6;
+}
+
+.oberplow {
+	overflow-y:auto;
+	overflow-x:auto;
+}
+
+.resource-list {
+	list-style:none;
+}
+
+.resource-list .btn {
+	width:45%;
+}
+
+.twitter{
+	margin:20px;
+	align-content:center
+}
+
+.pesbuk{
+	margin:20px;
+	text-align:center;
+	clear:both;
+}
+
+/*----- Tabs -----*/
+ul.tabs {
+	margin: 0;
+	padding: 0;
+	float: left;
+	list-style: none;
+	height: 32px;
+	border-bottom: 1px solid #333;
+	width: 100%;
+}
+
+ul.tabs li {
+	float: left;
+	margin: 0;
+	cursor: pointer;
+	padding: 0px 21px;
+	height: 31px;
+	line-height: 31px;
+	border-top: 1px solid #333;
+	border-left: 1px solid #333;
+	border-bottom: 1px solid #333;
+	background-color: #666;
+	color: #ccc;
+	overflow: hidden;
+	position: relative;
+}
+
+.tab_last { border-right: 1px solid #333; }
+
+ul.tabs li:hover {
+	background-color: #ccc;
+	color: #333;
+}
+
+ul.tabs li.active {
+	background-color: #fff;
+	color: #333;
+	border-bottom: 1px solid #fff;
+	display: block;
+}
+
+.tab_container {
+	border: 1px solid #333;
+	border-top: none;
+	clear: both;
+	float: left;
+	min-width: 100%;
+	min-height:100%;
+	background: #c40c5c;
+	overflow: auto;
+}
+
+.tab_content {
+	padding: 20px;
+	display: none;
+}
+
+.tab_content ul {
+	list-style:none;
+}
+
+.tab_drawer_heading { display: none; }
+
+@media screen and (max-width: 480px) {
+	.tabs {
+		display: none;
+	}
+	.tab_drawer_heading {
+		background-color: #ccc;
+		color: #fff;
+		border-top: 1px solid #333;
+		margin: 0;
+		padding: 5px 20px;
+		display: block;
+		cursor: pointer;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+	.d_active {
+		background-color: #666;
+		color: #fff;
+	}
+}
+ /* Background Animation */
+ 
+ .background-container{
+	 position:absolute;
+	 min-width:100%;
+	 min-height:50%;
+ }
+ 
+.cb-slideshow,
+.cb-slideshow:after {
+	position:relative;
+	list-style:none;
+    min-width: 100%;
+    min-height: 50%;
+    left: 0px;
+    top: 0px;
+    z-index: 0; 
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	
+}
+.cb-slideshow:after { 
+    content: '';
+	list-style:none;
+    background: transparent url(../img/pattern.png) repeat top left; 
+}
+
+.cb-slideshow li span { 
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+	list-style:none;
+    top:0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+	background-attachment:fixed;
+    background-repeat: none;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 24s linear infinite 0s; 
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.cb-slideshow li:nth-child(1) span { 
+    background-image: url(http://images.go.emersonnetworkpower.com/EloquaImages/clients/LiebertCorporation/%7b47077abd-5cf0-469d-8d77-eb7c5d4ece47%7d_alide1.jpg) 
+}
+.cb-slideshow li:nth-child(2) span { 
+    background-image: url(http://images.go.emersonnetworkpower.com/EloquaImages/clients/LiebertCorporation/%7b39f5e9ca-6e62-4cd7-850b-d81976e67df6%7d_slide2.jpg);
+    animation-delay: 8s; 
+}
+.cb-slideshow li:nth-child(3) span { 
+    background-image: url(http://images.go.emersonnetworkpower.com/EloquaImages/clients/LiebertCorporation/%7be0d8ac97-4c5b-42eb-be27-1dd69d45ad53%7d_slide3.jpg);
+    animation-delay: 16s; 
+}
+.cb-slideshow li:nth-child(4) span { 
+    background-image: url(../img/basex4.jpg);
+    animation-delay: 18s; 
+}
+.cb-slideshow li:nth-child(5) span { 
+    background-image: url(../img/basex3.jpg);
+    animation-delay: 24s; 
+}
+.cb-slideshow li:nth-child(6) span { 
+    background-image: url(../img/basex2.jpg);
+    animation-delay: 30s; 
+}
+
+.cb-slideshow li:nth-child(2) div { 
+    animation-delay: 6s; 
+}
+.cb-slideshow li:nth-child(3) div { 
+    animation-delay: 12s; 
+}
+.cb-slideshow li:nth-child(4) div { 
+    animation-delay: 18s; 
+}
+.cb-slideshow li:nth-child(5) div { 
+    animation-delay: 24s; 
+}
+.cb-slideshow li:nth-child(6) div { 
+    animation-delay: 30s; 
+}
+
+@keyframes imageAnimation { 
+    0% { opacity: 0; animation-timing-function: ease-in; }
+    16% { opacity: 1; animation-timing-function: ease-out; }
+    32% { opacity: 1 }
+    48% { opacity: 0 }
+    100% { opacity: 0 }
+}
